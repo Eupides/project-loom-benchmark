@@ -1,7 +1,6 @@
 package stretz.loom.benchmark.tasks.io;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -12,16 +11,12 @@ import java.io.IOException;
  */
 public class FileCreator implements Runnable {
     private final File file;
-    private final String text;
-
-    public FileCreator(String filePath, String format, String text) {
+    public FileCreator(String filePath, String format) {
         this.file = new File(filePath + format);
-        this.text = text;
     }
 
     public void run() {
         this.createFile();
-        this.writeToFile();
     }
 
     private void createFile() {
@@ -29,16 +24,6 @@ public class FileCreator implements Runnable {
             this.file.createNewFile();
         } catch (IOException e) {
             System.err.println("already exists: " + e.getMessage());
-        }
-    }
-
-    private void writeToFile() {
-        try {
-            FileWriter writer = new FileWriter(this.file);
-            writer.write(this.text);
-            writer.close();
-        } catch (IOException e) {
-            System.err.println(e.getMessage());
         }
     }
 }
