@@ -7,22 +7,18 @@ import stretz.loom.benchmark.util.ThreadUtil;
 import java.io.File;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Handling of the IO Tasks
- * @TODO Cleanup
  * @TODO Checking if folder exists
  * @TODO path needs to be relative
  */
 public class IoTask implements Task {
     private TaskState state = TaskState.NOT_STARTED;
     private final int fileNumber;
-    private final int folderNumber;
     private final String path = "/home/eupides/prog/uni/projectLoomBenchmark/tests/";
-    public IoTask(int fileNumber, int folderNumber) {
+    public IoTask(int fileNumber) {
         this.fileNumber = fileNumber;
-        this.folderNumber = folderNumber;
     }
 
 

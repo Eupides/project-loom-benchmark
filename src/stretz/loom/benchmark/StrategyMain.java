@@ -7,7 +7,7 @@ import stretz.loom.benchmark.tasks.cpu.SimpleCalculation;
 
 public class StrategyMain {
     public static void main (String[] args) {
-        IoTask taskOne = new IoTask(100, 1);
+        IoTask taskOne = new IoTask(100);
         taskOne.execute();
 
         CalculationStrategy strat = new SimpleCalculation(1000, Integer.MAX_VALUE, 10);
