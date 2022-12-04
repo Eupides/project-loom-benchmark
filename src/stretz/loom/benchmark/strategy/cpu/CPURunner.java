@@ -1,4 +1,4 @@
-package stretz.loom.benchmark.tasks.cpu;
+package stretz.loom.benchmark.strategy.cpu;
 
 public class CPURunner implements Runnable {
     private CalculationStrategy strategy;

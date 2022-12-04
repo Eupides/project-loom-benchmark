@@ -1,4 +1,4 @@
-package stretz.loom.benchmark.tasks.io;
+package stretz.loom.benchmark.strategy.io;
 
 import java.io.File;
 import java.io.IOException;

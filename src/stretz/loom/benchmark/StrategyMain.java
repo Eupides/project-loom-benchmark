@@ -1,9 +1,9 @@
 package stretz.loom.benchmark;
 
-import stretz.loom.benchmark.tasks.CPUTask;
-import stretz.loom.benchmark.tasks.IoTask;
-import stretz.loom.benchmark.tasks.cpu.CalculationStrategy;
-import stretz.loom.benchmark.tasks.cpu.SimpleCalculation;
+import stretz.loom.benchmark.task.normal.CPUTask;
+import stretz.loom.benchmark.task.normal.IoTask;
+import stretz.loom.benchmark.strategy.cpu.CalculationStrategy;
+import stretz.loom.benchmark.strategy.cpu.SimpleCalculation;
 
 public class StrategyMain {
     public static void main (String[] args) {

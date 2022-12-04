@@ -1,4 +1,4 @@
-package stretz.loom.benchmark.tasks.memory;
+package stretz.loom.benchmark.strategy.memory;
 
 import java.util.ArrayList;
 

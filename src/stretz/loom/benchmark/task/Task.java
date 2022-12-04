@@ -1,4 +1,4 @@
-package stretz.loom.benchmark.tasks;
+package stretz.loom.benchmark.task;
 
 public interface Task {
     public TaskState execute();

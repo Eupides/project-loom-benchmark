@@ -1,7 +1,9 @@
-package stretz.loom.benchmark.tasks;
+package stretz.loom.benchmark.task.normal;
 
-import stretz.loom.benchmark.tasks.io.FileCreator;
-import stretz.loom.benchmark.tasks.io.FileEditor;
+import stretz.loom.benchmark.strategy.io.FileCreator;
+import stretz.loom.benchmark.strategy.io.FileEditor;
+import stretz.loom.benchmark.task.Task;
+import stretz.loom.benchmark.task.TaskState;
 import stretz.loom.benchmark.util.ThreadUtil;
 
 import java.io.File;

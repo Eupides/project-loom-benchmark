@@ -1,8 +1,7 @@
-package stretz.loom.benchmark.tasks.io;
+package stretz.loom.benchmark.strategy.io;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.util.concurrent.TimeUnit;
 
 public class FileEditor implements Runnable{
     private final File file;

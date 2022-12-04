@@ -1,8 +1,10 @@
-package stretz.loom.benchmark.tasks;
+package stretz.loom.benchmark.task.normal;
 
-import stretz.loom.benchmark.tasks.cpu.CPURunner;
-import stretz.loom.benchmark.tasks.cpu.CalculationStrategy;
-import stretz.loom.benchmark.tasks.cpu.CalculatorFactory;
+import stretz.loom.benchmark.strategy.cpu.CPURunner;
+import stretz.loom.benchmark.strategy.cpu.CalculationStrategy;
+import stretz.loom.benchmark.strategy.cpu.CalculatorFactory;
+import stretz.loom.benchmark.task.Task;
+import stretz.loom.benchmark.task.TaskState;
 import stretz.loom.benchmark.util.ThreadUtil;
 
 import java.util.concurrent.Executors;
