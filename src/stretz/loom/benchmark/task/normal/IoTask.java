@@ -4,6 +4,7 @@ import stretz.loom.benchmark.strategy.io.FileCreator;
 import stretz.loom.benchmark.strategy.io.FileEditor;
 import stretz.loom.benchmark.task.Task;
 import stretz.loom.benchmark.task.TaskState;
+import stretz.loom.benchmark.util.FileUtil;
 import stretz.loom.benchmark.util.ThreadUtil;
 
 import java.io.File;
@@ -48,22 +49,10 @@ public class IoTask implements Task {
             System.out.println("Erstellen noch nicht fertig");
         }
 
-        this.cleanUp();
+        FileUtil.cleanUp(this.path);
         System.out.println("done");
         this.state = TaskState.DONE;
         return TaskState.DONE;
-    }
-
-    /**
-     * cleans the testingfolder where the files are created
-     */
-    private void cleanUp() {
-        File dir = new File(this.path);
-        for(File file: dir.listFiles()) {
-            if(!file.isDirectory()) {
-                file.delete();
-            }
-        }
     }
 
     @Override
